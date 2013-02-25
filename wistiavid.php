@@ -43,7 +43,12 @@ function PlaceWistiaVid($args) {
     //$siteurl = get_option('siteurl');
     //$url = $siteurl . '/wp-content/plugins/' . basename(dirname(__FILE__)) . '/css/wistiavidStyle.css';
     //echo "<link rel='stylesheet' type='text/css' href='$url' />\n";
-
+	
+	$mailchimpid='';
+	if(isset($args[mailchimpid])) {
+		$mailchimpid = $args[mailchimpid];
+	} //end if
+		
 	?>
 		<div id="wistia_<?php echo $args[id]; ?>" class="wistia_embed" style="width:640px;height:388px;" data-video-width="640" data-video-height="360"></div>
 		</div>
@@ -61,7 +66,7 @@ function PlaceWistiaVid($args) {
 				  bottomText: "",
 				  time: "end",
 				  provider: "mailchimp",
-				  list: "e76b12fdfc"
+				  list: "<?php echo $mailchimpid; ?>"
 				}
 			  }
 			});
@@ -71,9 +76,14 @@ function PlaceWistiaVid($args) {
 } //end PlaceWistiaVid
 
 function PlaceWistiaIframe($args) {
+	//Function to place a Wistia Iframe - to use this function instead of the API, comment out the line 25 and uncomment out line 24
+	$mailchimpid='';
+	if(isset($args[mailchimpid])) {
+		$mailchimpid = $args[mailchimpid];
+	} //end if
 	?>
-	<iframe src="http://fast.wistia.net/embed/iframe/q509p384zl?controlsVisibleOnLoad=true&playerColor=f78725&plugin%5BrequireEmail-v1%5D%5BbottomText%5D=&plugin%5BrequireEmail-v1%5D%5Blist%5D=e76b12fdfc&plugin%5BrequireEmail-v1%5D%5Bprovider%5D=mailchimp&plugin%5BrequireEmail-v1%5D%5Btime%5D=end&plugin%5BrequireEmail-v1%5D%5BtopText%5D=Want%20to%20get%20in%20touch%3F&version=v1&videoHeight=360&videoWidth=640&volumeControl=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640" height="360"></iframe>
+	<iframe src="http://fast.wistia.net/embed/iframe/<?php echo $args[id]; ?>?controlsVisibleOnLoad=true&playerColor=f78725&plugin%5BrequireEmail-v1%5D%5BbottomText%5D=&plugin%5BrequireEmail-v1%5D%5Blist%5D=<?php echo $mailchimpid; ?>&plugin%5BrequireEmail-v1%5D%5Bprovider%5D=mailchimp&plugin%5BrequireEmail-v1%5D%5Btime%5D=end&plugin%5BrequireEmail-v1%5D%5BtopText%5D=Want%20to%20get%20in%20touch%3F&version=v1&videoHeight=360&videoWidth=640&volumeControl=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640" height="360"></iframe>
 	<?php
-}
+} //end PlaceWistiaIframe
 
 ?>
