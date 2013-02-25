@@ -2,12 +2,17 @@
 /*
 	Plugin Name: Place Wistia Vid
 	Plugin URI: http://www.whatwasthat.com.au
-	Description: A plugin to add embed a Wistia Vid on Wordpress
+	Description: A plugin to add embed a Wistia Vid on Wordpress.  To use Plugin install and then on page you wish to place the Wistia Vid put shortcode [wistiavid id=xxxxx] xxxxx being the Wistia Video ID
 	Version: 0.1
 	Author: Craig Lambie
 	Author URI: http://craig.lambie.net.au
 
-	Copyright 2012  Craig Lambie  (email : craig@whatwasthat.com.au)
+	Copyright 2013  Craig Lambie  (email : craig+wistiavid@whatwasthat.com.au)
+	
+	To use Plugin install and then on page you wish to place the Wistia Vid put shortcode [wistiavid id=xxxxx] xxxxx being the Wistia Video ID, this can be found in the URL of the video on Wistia.
+	Eg. http://smallbusinesswebsites.wistia.com/medias/q509p384zl
+	The ID of this video is q509p384zl therefore the shortcode for the video is [wistiavid id=q509p384zl] as found on this page: 
+	http://www.smallbusinesswebsites.org.au/about-us/
 
 */
 
