@@ -2,7 +2,7 @@
 /*
 	Plugin Name: Place Wistia Vid
 	Plugin URI: http://www.whatwasthat.com.au
-	Description: A plugin to add embed a Wistia Vid on Wordpress.  To use Plugin install and then on page you wish to place the Wistia Vid put shortcode [wistiavid id=xxxxx] xxxxx being the Wistia Video ID
+	Description: A plugin to add embed a Wistia Vid on Wordpress.  To use Plugin install and then on page you wish to place the Wistia Vid put shortcode [wistiavid id=xxxxx mailchimpid=yyyyy] xxxxx being the Wistia Video ID and yyyyy being the mailchimp list id.
 	Version: 0.1
 	Author: Craig Lambie
 	Author URI: http://craig.lambie.net.au
