@@ -1,5 +1,6 @@
 Wistia Vid Readme
 
+v0.1
 To use Plugin install and then on page you wish to place the Wistia Vid put shortcode [wistiavid id=xxxxx]
 
 xxxxx being the Wistia Video ID, this can be found in the URL of the video on Wistia.
@@ -23,3 +24,9 @@ http://wordpress.org/extend/plugins/addthis/
 
 Future Issues: Please notify me: craig+wistiavid@whatwasthat.com.au
 
+Future Enhancements:
+- Ability to add and edit player like on Wistia website
+- Player Customisation
+- Social Sharing
+- Call to Action
+- Capture Email
